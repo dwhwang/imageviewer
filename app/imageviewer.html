@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Image Viewer</title>
+  <link rel="stylesheet" href="./css/bootstrap-glyphicon.css">
+  <link rel="stylesheet" href="./css/imageviewer.css">
+</head>
+
+<body>
+  <header id="menu">
+    <input id="install_path" type="text" placeholder="Enter album directory...">
+    <button id="browse">
+      <span class="glyphicon glyphicon-search"></span>
+    </button>
+    <span id="input_msg"></span>
+  </header>
+  <div id="content">
+    <img id="imgwindow" class="fullheight">
+  </div>
+  <footer>
+    <button id="btn_leftmost">
+      <span class="glyphicon glyphicon-step-backward"></span>
+    </button>
+    <button id="btn_left">
+      <span class="glyphicon glyphicon-triangle-left"></span>
+    </button>
+    <input id="ctrl_page" type="text" value="0">
+    <span id="lbl_total">/ 0</span>
+    <button id="btn_right">
+      <span class="glyphicon glyphicon-triangle-right"></span>
+    </button>
+    <button id="btn_rightmost">
+      <span class="glyphicon glyphicon-step-forward"></span>
+    </button>
+    <button id="fit_height">
+      <span class="glyphicon glyphicon-fullscreen"></span>
+    </button>
+  </footer>
+  <script src="./js/imageviewer.js"></script>
+</body>
+
+</html>

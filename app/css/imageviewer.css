@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header, footer {
+  width: 100%;
+  height: 35px;
+  background-color: #333;
+  color: #eee;
+  padding: 5px;
+}
+
+header {
+  text-align: right;
+}
+
+footer {
+  text-align: center;
+}
+
+#content {
+  overflow-y: scroll;
+  width: 100%;
+  height: calc(100% - 70px);
+  box-sizing: border-box;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  /* since we are only using chrome in electron */
+  -webkit-user-select: none;
+}
+
+#fit_height {
+  float: right;
+}
+
+#install_path {
+  width: 230px;
+}
+
+#ctrl_page {
+  text-align: center;
+  width: 50px;
+}
+
+#input_msg {
+  float: left;
+  color: #bb0000;
+}
+
+#imgwindow {
+  max-width: 100%;
+}
+
+.fullheight {
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
